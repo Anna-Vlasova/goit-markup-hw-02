@@ -28,54 +28,64 @@
 <!--Filters-->
     <main>
         <h2 hidden>Презентация работ</h2>
-    <section>
-        <ul>
-            <li> <a href="">Все</a> </li>
-            <li> <a href="">Веб-сайты</a> </li>
-            <li> <a href="">Приложения</a> </li>
-            <li> <a href="">Дизайн</a> </li>
-            <li> <a href="">Маркетинг</a> </li>
-        </ul>
-    </section>
+    
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('Все')"> Все </button>
+            <button class="btn" onclick="filterSelection('Веб-сайты')"> Веб-сайты </button>
+            <button class="btn" onclick="filterSelection('Приложения')"> Приложения </button>
+            <button class="btn" onclick="filterSelection('Дизайн')"> Дизайн </button>
+            <button class="btn" onclick="filterSelection('Маркетинг')"> Маркетинг </button>
+        </div>
+
 
     <!--Products-->
-    <section>
-        <ul>
-            <li> <img src="./image/portfolio-foto/img-1-2.jpg" alt=""> 
+    <div class="container">
+        <div class="filterDiv Веб-сайты"> <img src="./image/portfolio-foto/img-1-2.jpg" 
+            alt="макбук-з-выдкритим-сайтом" width="370" height="294">
                 <h3>Технокряк</h3> 
-                <p>Веб-сайт</p> 
-            </li>
-            <li> <img src="./image/portfolio-foto/img-2-2.jpg" alt="">
+                <p>Веб-сайт</p>
+        </div>
+        <div class="filterDiv colors Дизайн"><img src="./image/portfolio-foto/img-2-2.jpg" 
+            alt="New-Orlean-vs-Golden-Star" width="370" height="294"> 
                 <h3>Постер New Orlean vs Golden Star</h3>
                 <p>Дизайн</p>
-            </li><li> <img src="./image/portfolio-foto/img-3-2.jpg" alt="">
-                <h3>Ресторан Seafood</h3>
-                <p>Приложение</p>
-            </li><li> <img src="./image/portfolio-foto/img-4-2.jpg" alt="">
-                <h3>Проект Prime</h3>
-                <p>Маркетинг</p>
-            </li>
-            <li> <img src="./image/portfolio-foto/img-5-2.jpg" alt="">
-                <h3>Проект Boxes</h3>
-                <p>Приложение</p>
-            </li>
-            <li> <img src="./image/portfolio-foto/img-6-2.jpg" alt="">
-                <h3>Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
-            </li>
-            <li> <img src="./image/portfolio-foto/img-7-2.jpg" alt="">
-                <h3>Издание Limited Edition</h3>
-                <p>Дизайн</p>
-            </li>
-            <li> <img src="./image/portfolio-foto/img-8-2.jpg" alt="">
-                <h3>Проект LAB</h3>
-                <p>Маркетинг</p>
-            </li>
-            <li> <img src="./image/portfolio-foto/img-9-2.jpg" alt="">
-                <h3>Growing Business</h3>
-                <p>Приложение</p>
-        </ul>
-    </section>
+        </div>
+        <div class="filterDiv Приложения"><img src="./image/portfolio-foto/img-3-2.jpg" 
+            alt="фото-сайта-рыбного-ресторана" width="370" height="294">
+            <h3>Ресторан Seafood</h3>
+            <p>Приложение</p>
+        </div>
+        <div class="filterDiv Маркетинг"><img src="./image/portfolio-foto/img-4-2.jpg" 
+            alt="наушники" width="370" height="294">
+            <h3>Проект Prime</h3>
+            <p>Маркетинг</p>
+        </div>
+        <div class="filterDiv Приложения"><img src="./image/portfolio-foto/img-5-2.jpg" 
+            alt="boxes" width="370" height="294">
+            <h3>Проект Boxes</h3>
+            <p>Приложение</p>
+        </div>
+        <div class="filterDiv Веб-сайты"><img src="./image/portfolio-foto/img-6-2.jpg" 
+            alt="apple-iMac" width="370" height="294">
+            <h3>Inspiration has no Borders</h3>
+            <p>Веб-сайт</p>
+        </div>
+        <div class="filterDiv Дизайн"><img src="./image/portfolio-foto/img-7-2.jpg" 
+            alt="открытая-книга" width="370" height="294">
+            <h3>Издание Limited Edition</h3>
+            <p>Дизайн</p>
+        </div>
+        <div class="filterDiv Маркетинг"><img src="./image/portfolio-foto/img-8-2.jpg" 
+            alt="картонная-бирка-с-дырочкой" width="370" height="294">
+            <h3>Проект LAB</h3>
+            <p>Маркетинг</p>
+        </div>
+        <div class="filterDiv Приложения"><img src="./image/portfolio-foto/img-9-2.jpg" 
+            alt="процесс-работы-за-ноутбуком" width="370" height="294">
+            <h3>Growing Business</h3>
+            <p>Приложение</p>
+        </div> 
+    </div>
     </main>
 </body>
 
