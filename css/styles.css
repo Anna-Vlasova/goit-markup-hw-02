@@ -1,74 +1,199 @@
+:root {
+  --focus: #2196f3;
+  --navigation-title: #212121;
+  --backround-header: #ffffff;
+  --content-text: #757575;
+  --bg-Features: #e5e5e5;
+  --backround-our-team: #f5f4fa;
+  --backround-footer: #2f303a;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+  color: var(--content-text);
+}
+
 ul {
   list-style: none;
 }
+
 /* Stile header */
 .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
   color: #000000;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--focus);
 }
 .page-header {
-  background: #ffffff;
+  background: var(--backround-header);
 }
 .site-nav a {
-  color: #212121;
+  color: var(--navigation-title);
+  text-decoration: none;
 }
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #2196f3;
+  color: var(--focus);
+  width: 294px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
 }
-. link.current {
-  color: #2196f3;
+.link.current {
+  color: var(--focus);
 }
 .address-header a {
-  color: #757575;
+  color: var(--content-text);
+  text-decoration: none;
 }
 .address-header :hover,
 .address-header :focus {
-  color: #2196f3;
+  color: var(--focus);
 }
 /* Bg */
 .hero-text {
+  color: var (--backround-header);
   position: absolute;
   width: 696px;
   height: 120px;
   left: 452px;
   top: 280px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .hero-button {
   position: absolute;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
+  background: var(--focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--backround-header);
+}
+.hero-button:hover {
+  background: #188ce8;
 }
 
 /* Features */
-.section-title {
-  color: #212121;
+.title-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
+.features-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--navigation-title);
+}
+
+.features-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Activity */
+
+.activity-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: var(--navigation-title);
+}
+/* Our Team */
+
+.our-team-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: var(--navigation-title);
+}
+.our-team {
+  width: 1600px;
+  height: 648px;
+  background: #f5f4fa;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--navigation-title);
+}
 .section-text {
-  color: #757575;
-  width: 270px;
-  height: 75px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+/* Footer */
+.address-footer {
+  background: #2f303a;
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  text-decoration: none;
+}
+.post-address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--backround-header);
+  cursor: pointer;
+}
+.address {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
