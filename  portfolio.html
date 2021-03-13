@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- Site header -->
 
 <header class="page-header">
     <nav>
-        <a href="./index.html">WebStudio </a>
+        <a class="logo" href="/index.html"> <span class="logo-web">Web</span>Studio</a>
         <ul class="site-nav">
-            <li> <a href="">Студия</a></li>
-            <li> <a href="./portfolio.html" class="link.current">Портфолио</a></li>
+            <li> <a href="./index.html">Студия</a></li>
+            <li> <a class="link current" href="" class="link.current">Портфолио</a></li>
             <li> <a href="">Контакты</a></li>
         </ul>
     </nav>
 
-    <ul>
+    <ul class="address-header">
         <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
     </ul>
@@ -28,9 +31,9 @@
 <body>
 <!--Filters-->
     <main>
-        <h2 hidden>Презентация работ</h2>
+        <h2 class="title-hidden">Презентация работ</h2>
     
-        <div id="myBtnContainer">
+        <div id="mybtncontainer">
             <button class="btn active" onclick="filterSelection('Все')"> Все </button>
             <button class="btn" onclick="filterSelection('Веб-сайты')"> Веб-сайты </button>
             <button class="btn" onclick="filterSelection('Приложения')"> Приложения </button>
@@ -43,48 +46,48 @@
     <div class="container">
         <div class="filterDiv Веб-сайты"> <img src="./image/portfolio-foto/img-1-2.jpg" 
             alt="макбук-з-выдкритим-сайтом" width="370" height="294">
-                <h3>Технокряк</h3> 
-                <p>Веб-сайт</p>
+                <h3 class="title">Технокряк</h3> 
+                <p class="text">Веб-сайт</p>
         </div>
         <div class="filterDiv colors Дизайн"><img src="./image/portfolio-foto/img-2-2.jpg" 
             alt="New-Orlean-vs-Golden-Star" width="370" height="294"> 
-                <h3>Постер New Orlean vs Golden Star</h3>
-                <p>Дизайн</p>
+                <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                <p class="text">Дизайн</p>
         </div>
         <div class="filterDiv Приложения"><img src="./image/portfolio-foto/img-3-2.jpg" 
             alt="фото-сайта-рыбного-ресторана" width="370" height="294">
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
+            <h3 class="title">Ресторан Seafood</h3>
+            <p class="text">Приложение</p>
         </div>
         <div class="filterDiv Маркетинг"><img src="./image/portfolio-foto/img-4-2.jpg" 
             alt="наушники" width="370" height="294">
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
+            <h3 class="title">Проект Prime</h3>
+            <p class="text">Маркетинг</p>
         </div>
         <div class="filterDiv Приложения"><img src="./image/portfolio-foto/img-5-2.jpg" 
             alt="boxes" width="370" height="294">
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
+            <h3 class="title">Проект Boxes</h3>
+            <p class="text">Приложение</p>
         </div>
         <div class="filterDiv Веб-сайты"><img src="./image/portfolio-foto/img-6-2.jpg" 
             alt="apple-iMac" width="370" height="294">
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 class="title">Inspiration has no Borders</h3>
+            <p class="text">Веб-сайт</p>
         </div>
         <div class="filterDiv Дизайн"><img src="./image/portfolio-foto/img-7-2.jpg" 
             alt="открытая-книга" width="370" height="294">
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
+            <h3 class="title">Издание Limited Edition</h3>
+            <p class="text">Дизайн</p>
         </div>
         <div class="filterDiv Маркетинг"><img src="./image/portfolio-foto/img-8-2.jpg" 
             alt="картонная-бирка-с-дырочкой" width="370" height="294">
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
+            <h3 class="title">Проект LAB</h3>
+            <p class="text">Маркетинг</p>
         </div>
         <div class="filterDiv Приложения"><img src="./image/portfolio-foto/img-9-2.jpg" 
             alt="процесс-работы-за-ноутбуком" width="370" height="294">
-            <h3>Growing Business</h3>
-            <p>Приложение</p>
+            <h3 class="title">Growing Business</h3>
+            <p class="text">Приложение</p>
         </div> 
     </div>
     </main>
@@ -93,11 +96,11 @@
 <!--Footer-->
     <footer>
         <address>
-            <ul>
-                <li> <a href="/index.html">WebStudio</a> </li>
-                <li>г. Киев, пр-т Леси Украинки,26</li>
-                <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
+            <ul class="address-footer">
+                <li><a class="logo" href="/index.html"> <span class="logo-web">Web</span>Studio</a></li>
+                <li class="post-address">г. Киев, пр-т Леси Украинки,26</li>
+                <li> <a class="address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li> <a class="address" href="tel:+380961111111">+38 096 111 11 11</a> </li>
             </ul>
         </address>
     </footer>
