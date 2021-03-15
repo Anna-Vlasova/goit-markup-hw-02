@@ -73,7 +73,7 @@ ul {
 }
 /* Bg */
 .hero-text {
-  color: var (--backround-header);
+  color: var(--backround-header);
   position: absolute;
   width: 696px;
   height: 120px;
