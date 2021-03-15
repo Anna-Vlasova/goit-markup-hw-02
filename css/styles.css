@@ -1,6 +1,8 @@
 :root {
   --focus: #2196f3;
+  --logo: #000000;
   --navigation-title: #212121;
+  --hiro-button-hover: #188ce8;
   --backround-header: #ffffff;
   --content-text: #757575;
   --bg-Features: #e5e5e5;
@@ -26,7 +28,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: #000000;
+  color: var(--logo);
   text-decoration: none;
 }
 .logo-web {
@@ -95,7 +97,7 @@ ul {
   color: var(--backround-header);
 }
 .hero-button:hover {
-  background: #188ce8;
+  background: var(--hiro-button-hover);
 }
 
 /* Features */
@@ -150,7 +152,7 @@ ul {
   color: var(--navigation-title);
 }
 .our-team {
-  background: #f5f4fa;
+  background: var(--backround-our-team);
 }
 
 .section-title {
@@ -172,7 +174,7 @@ ul {
 }
 /* Footer */
 .address-footer {
-  background: #2f303a;
+  background: var(--backround-footer);
   width: 1600px;
   height: 252px;
   left: 0px;
