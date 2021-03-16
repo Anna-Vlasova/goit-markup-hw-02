@@ -32,6 +32,8 @@ ul {
   line-height: 1.19;
   color: var(--logo);
   text-decoration: none;
+  width: 145px;
+  height: 31px;
 }
 .logo-web {
   color: var(--focus);
@@ -110,6 +112,7 @@ ul {
 }
 
 /* Features */
+
 .title-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -193,7 +196,15 @@ ul {
   color: var(--address-color);
   cursor: pointer;
 }
+.address:hover,
+.address:focus {
+  color: var(--focus);
+}
 
+.post-address:hover,
+.post-address:focus {
+  color: var(--focus);
+}
 /* PORTFOLIO */
 
 /* Filters */
